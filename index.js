@@ -11,10 +11,10 @@ function showTime() {
 
 	minute = addZero(minute);
 	second = addZero(second);
-
+	let helo = api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={cb7fa35f68faa49bba4f60066f0ac487}
 	document.getElementById(
 		"date"
-	).innerHTML = `${today},<br> ${hour}:${minute}:${second}, <br> ${day}/${month}/${year}`;
+	).innerHTML = `${helo}, ${today},<br> ${hour}:${minute}:${second}, <br> ${day}/${month}/${year}`;
 	setTimeout(showTime, 0);
 }
 
